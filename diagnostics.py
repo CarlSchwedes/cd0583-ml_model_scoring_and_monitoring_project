@@ -98,8 +98,8 @@ def outdated_packages_list():
 
 if __name__ == '__main__':
     data = pd.read_csv(os.path.join(output_folder_path, 'finaldata.csv'))
-    print(model_predictions(data))
-    print(dataframe_summary())
-    print(missing_data())
-    print(execution_time())
+    print("model_predictions: ", model_predictions(data))
+    print("dataframe_summary: ", dataframe_summary())
+    print("missing_data: (ingestion_time/training_time)", missing_data())
+    print("execution_time: ", execution_time())
     print(outdated_packages_list())

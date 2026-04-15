@@ -1,4 +1,5 @@
 {
+    "model": "rf",
     "input_folder_path": "sourcedata",
     "output_folder_path": "ingesteddata",
     "test_data_path": "testdata",

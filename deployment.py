@@ -19,8 +19,8 @@ def store_model_into_pickle(model=None):
     os.makedirs(prod_deployment_path, exist_ok=True)
 
     files_to_copy = [
-        (os.path.join(model_path, 'trainedmodel.pkl'), os.path.join(prod_deployment_path, 'trainedmodel.pkl')),
-        (os.path.join(model_path, 'latestscore.txt'), os.path.join(prod_deployment_path, 'latestscore.txt')),
+        (os.path.join(model_path, f'trainedmodel_{config['model']}.pkl'), os.path.join(prod_deployment_path, 'trainedmodel.pkl')),
+        (os.path.join(model_path, f'latestscore_{config['model']}.txt'), os.path.join(prod_deployment_path, 'latestscore.txt')),
         (os.path.join(ingested_data_path, 'ingestedfiles.txt'), os.path.join(prod_deployment_path, 'ingestedfiles.txt')),
     ]
 

@@ -1,1 +1,1 @@
-*/10 * * * * cd /workspaces/cd0583-project-starter-file && /usr/local/bin/python /workspaces/cd0583-project-starter-file/fullprocess.py
+*/10 * * * * cd /workspaces/cd0583-ml_model_scoring_and_monitoring_project && /usr/local/bin/python /workspaces/cd0583-ml_model_scoring_and_monitoring_project/fullprocess.py
